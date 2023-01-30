@@ -11,7 +11,7 @@ driver = '{ODBC Driver 18 for SQL Server}'
 app = Flask(__name__)
 app.debug = True
 
-@app.route("/")
+@app.route("/home")
 def hello():
     cnxn = pyodbc.connect('DRIVER=' + driver + 
                       ';SERVER=' + server + 
